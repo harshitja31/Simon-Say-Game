@@ -2,33 +2,50 @@ body{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
 }
+
 .box-container{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; /* Allows the items to wrap as needed */
 }
+
 .btn{
     height: 100px;
     width: 100px;
     margin: 2rem;
     border-radius :20%;
     border: 5px solid black;
-    /* line-height: 600%; */
 }
+
 .red{
     background-color: #d95980;
 }
+
 .orange{
     background-color: #f99b45;
 }
+
 .green{
     background-color: #63aac0;
 }
+
 .blue{
     background-color: #819ff9;
 }
+
 .flash{
     background-color: white;
 }
+
 .userFlash{
     background-color: green;
+}
+
+/* Media query for screens smaller than 600px */
+@media only screen and (max-width: 600px) {
+    .btn{
+        height: 50px;
+        width: 50px;
+        margin: 1rem;
+    }
 }
